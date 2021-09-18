@@ -1,0 +1,467 @@
+/* ======================
+Default css start
+======================== */
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1500px;
+}
+.bg{
+    background-color: #f7f9fc;
+}
+/* ======================
+Default css end
+======================== */
+
+/* ==================================
+main header section css start
+==================================== */
+.main-header{
+    background: #dfdfdf;
+}
+.logo-header img{
+    width: 115px;
+}
+ul.header-primary-menu li{
+    padding: 0 22px;
+}
+.act-button{
+    color: #5552e4 !important;
+    position: relative;
+}
+.act-button::after {
+    content: "";
+    background-color: #5552e4 !important;
+    height: 3px !important;
+    width: 131% !important;
+    position: absolute !important;
+    bottom: -37px !important;
+    left: -11px !important;
+}
+ul.header-primary-menu li a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+ul.header-primary-menu li.list-item a.link-item{
+    transition: all 0.3s ease-in-out;
+}
+/* ul.header-primary-menu li.list-item:hover a.link-item{
+    color: #5552e4;
+} */
+ul.header-primary-menu li.list-item a.link-item::after {
+    content: "";
+    background-color: #5552e4;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -37px;
+    left: -12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul.header-primary-menu li.list-item:hover a.link-item::after {
+    visibility: visible;
+    opacity: 1;
+    width: 120%;
+}
+ul.header-primary-menu li.list-item a.services-link::after {
+    content: "";
+    background-color: #5552e4;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -37px;
+    left: -8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul.header-primary-menu li.list-item:hover a.services-link::after {
+    visibility: visible;
+    opacity: 1;
+    width: 120%;
+}
+ul.header-primary-menu li.list-item a.contact-link::after {
+    content: "";
+    background-color: #5552e4;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -37px;
+    left: -6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul.header-primary-menu li.list-item:hover a.contact-link::after {
+    visibility: visible;
+    opacity: 1;
+    width: 123%;
+}
+ul.header-primary-menu li.list-item a.pages-item::after {
+    content: "";
+    background-color: #5552e4;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: -37px;
+    left: -6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+ul.header-primary-menu li.list-item:hover a.pages-item::after {
+    visibility: visible;
+    opacity: 1;
+    width: 136%;
+}
+.button-div .btn-primary {
+    background: #fff !important;
+    color: #5552e4;
+    border: #5552e4;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+.button-div .btn-primary:hover{
+    color: #fff;
+}
+.button-div .btn-primary::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5552e4;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+.button-div .btn-primary:hover::after{
+    transition:.5s;
+    width: 100%;
+}
+
+/* dopdown menu */
+ul.header-primary-menu li.list-item{
+    position: relative;
+}
+
+ul.header-primary-menu li.list-item ul.pagess{
+    position: absolute;
+    top: 250%;
+    left: 17%;
+    background-color: #0011ff;
+    list-style: none;
+    width: 220px;
+    padding: 20px 10px !important;
+    border: 20px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+ul.header-primary-menu li.list-item ul.blogs{
+    position: absolute;
+    top: 250%;
+    left: 26%;
+    background-color: #5552e4;
+    list-style: none;
+    width: 250px;
+    padding: 10px;
+    border: 20px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+ul.header-primary-menu li.list-item ul.drop-ul li.drop-list-item a.drop-link-item{
+    display: block;
+    color: #fff;
+}
+ul.header-primary-menu li.list-item ul.drop-ul li.drop-list-item{
+    padding: 0 5px !important;
+}
+ul.header-primary-menu li.list-item:hover ul.drop-ul{
+    opacity: 1;
+    visibility: visible;
+    top: 245%;
+}
+/* ==================================
+main header section css end
+==================================== */
+
+/* ==================================
+hero section css strat
+==================================== */
+.hero-sect{
+    overflow: hidden;
+    position: relative;
+    height: 82vh;
+}
+.hero-section-item{
+    height: 82vh;
+} 
+.hero-sect::after {
+    content: "";
+    height: 1013px;
+    width: 56%;
+    position: absolute;
+    bottom: 9px;
+    right: -228px;
+    background: url(./img/hero-image.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.hero-banner h2 {
+    width: 550px;
+    font-size: 44px;
+    font-weight: 700;
+}
+.hero-banner p {
+    color: #767676;
+    width: 600px;
+    line-height: 1.7rem;
+}
+.banner .btn-primary {
+    background: #5552e4 !important;
+    color: #fff;
+    border:1px solid #5552e4;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+.hero-banner .btn-primary:hover{
+    color: #5552e4 !important;
+    background: #fff !important;
+}
+/* ==================================
+hero section css end
+==================================== */
+
+/* ==================================
+feature section css start
+==================================== */
+.feature-section{}
+.text span{
+    color: #5552e4;
+}
+.text h2 {
+    width: 550px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.line-div {
+    position: relative;
+    margin-bottom: 34px;
+}
+.line-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background-color: #5552e4;
+}
+.text p{
+    color: #767676;
+    width: 600px;
+    line-height: 1.7rem;
+}
+/* ==================================
+feature section css end
+==================================== */
+
+/* ==================================
+service section css start
+==================================== */
+.services-item{
+    background: #f7f9fc;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.services-item:hover{
+    background-color: #5552e4;
+    color: #fff;
+    transform: scale(1.05);
+}
+.services-box{
+}
+.services-item p{ 
+    transition: all .4s ease-in-out;
+}
+.services-item:hover p{ 
+    color: #fff !important;
+}
+.services-box span.icon-div {
+    background-color: #5552e4;
+    height: 60px;
+    width: 60px;
+    border-radius: 50% 50% 50% 0;
+    transition: all 0.5s;
+}
+.services-item:hover span.icon-div{
+    color: #5552e4 !important;
+    background-color: #fff;
+}
+.services-box .line-div {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.services-box .line-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 34px;
+    background-color: #5552e4;
+    transition: all 0.5s;
+}
+.services-item:hover .line-div::after{
+    background-color: #fff !important;
+    width: 55px;
+}
+.services-box p{}
+
+.bg-banner{
+    position: relative;
+}
+.bg-banner img {
+    position: absolute;
+    bottom: -50px;
+    left: -51px;
+    z-index: -1;
+}
+/* ==================================
+service section css end
+==================================== */
+
+/* ==================================
+animated section css start
+==================================== */
+.animated-section-head {
+    background: url(./img/video-bg.jpg) no-repeat;
+    background-position: 0px -145px;
+    background-size: cover;
+    height: 78vh;
+    position: relative;
+    z-index: 1;
+}
+.animated-section-head::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 59, 92, 0.68);
+    z-index: -1;
+}
+
+.animated-title  .line-div {
+    position: relative;
+    margin-bottom: 34px;
+}
+.animated-title .line-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 670px;
+    height: 2px;
+    width: 60px;
+    background-color: #fff;
+}
+
+
+.for-animation{
+    position: relative;
+}
+.play-animation-btn {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background: #fff;
+    font-size: 23px;
+    text-align: center;
+    line-height: 90px;
+    color: #036eff;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transition: all 0.4s ease-in;
+}
+.play-animation-btn:hover{
+    color: #fff;
+    background-color: #036eff;
+    transition: all 0.5s ease-in-out;
+}
+.play-animation-btn::before {
+    content: "";
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: playbtn 1.5s ease-out infinite;
+}
+.play-animation-btn::after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: playbtn 1.5s ease-out infinite;
+}
+
+@keyframes playbtn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transition: scale(0.8);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+    75%{
+        transform: scale(2);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* ==================================
+animated section css start
+==================================== */
